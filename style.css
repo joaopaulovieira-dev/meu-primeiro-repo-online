@@ -1,0 +1,180 @@
+/* Reset básico e Box Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos do Cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header .subtitulo {
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+/* Estilos da Navegação */
+nav {
+    text-align: center;
+    background-color: #555;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+nav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #777;
+}
+
+/* Estilos do Conteúdo Principal */
+main {
+    max-width: 960px;
+    /* Limita a largura */
+    margin: 20px auto;
+    /* Centraliza e adiciona margem */
+    padding: 0 20px;
+    /* Espaço lateral */
+    overflow: hidden;
+    /* Contém floats internos */
+}
+
+section {
+    background-color: #fff;
+    /* Fundo branco */
+    padding: 20px;
+    /* Espaçamento interno */
+    margin-bottom: 20px;
+    /* Espaço entre seções */
+    border: 1px solid #ddd;
+    /* Borda sutil */
+    overflow: hidden;
+    /* Contém floats internos */
+}
+
+section h2 {
+    color: #0056b3;
+    /* Azul */
+    margin-bottom: 15px;
+    /* Espaço abaixo do título */
+}
+
+section p {
+    margin-bottom: 10px;
+    /* Espaço abaixo dos parágrafos */
+}
+
+/* Estilos para a Foto de Perfil */
+.foto-perfil {
+    float: left;
+    /* Flutua à esquerda */
+    width: 150px;
+    /* Largura fixa */
+    height: 150px;
+    /* Altura fixa */
+    border-radius: 50%;
+    /* Borda redonda */
+    margin-right: 20px;
+    /* Espaço à direita */
+    margin-bottom: 10px;
+    /* Espaço abaixo */
+    border: 3px solid #ddd;
+    /* Borda */
+}
+
+/* Estilos do Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+    clear: both;
+    /* Garante que fique abaixo de floats */
+}
+
+/* --- Media Query para Telas Pequenas --- */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+        /* Fonte menor */
+    }
+
+    header .subtitulo {
+        font-size: 1em;
+        /* Fonte menor */
+    }
+
+    nav a {
+        display: block;
+        /* Links um abaixo do outro */
+        padding: 8px 15px;
+        margin: 0;
+        border-bottom: 1px solid #666;
+        /* Linha separadora */
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+        /* Remove borda do último */
+    }
+
+    main {
+        margin: 10px auto;
+        /* Menos margem */
+        padding: 0 10px;
+        /* Menos padding */
+    }
+
+    section {
+        padding: 15px;
+        /* Menos padding */
+    }
+
+    section h2 {
+        font-size: 1.3em;
+        /* Fonte menor */
+    }
+
+    /* Ajustes da Foto para Telas Pequenas */
+    .foto-perfil {
+        float: none;
+        /* Remove float */
+        display: block;
+        /* Torna bloco */
+        width: 120px;
+        /* Tamanho menor */
+        height: 120px;
+        margin: 0 auto 15px auto;
+        /* Centraliza e adiciona margem abaixo */
+    }
+
+    /* Regra genérica para outras imagens */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
